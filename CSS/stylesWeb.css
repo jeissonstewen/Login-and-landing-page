@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1976d2;
+    padding: 1rem;
+}
+
+.navbar {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.link {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+
+.salir a {
+    text-decoration: none;
+    color: white;
+}
+
+.main__container {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.carrusel{
+    width: 35%;
+}
+.container img {
+    width: 90%;
+    height: 80%;
+}
+
+.info {
+    width: 65%;
+    text-align: justify;
+}
+.cards{
+    padding: 1rem;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    border: 3px solid rgba(136, 135, 135, 0.561);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    padding: 1rem 2rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.card img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 50%;
+    margin: auto;
+}
+.description{
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+}
+.precio{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    width: 100px;
+    margin: auto;
+}
+.card button {
+    background-color: #3f51b5;
+    color: white;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    width: 60%;
+}
+
+@media(max-width: 768px) {
+    .carrusel, .info {
+      width: 100%;
+    }
+    .cards{
+        height: 80%;
+    }
+    .card{
+        width: 70%;
+    }
+}
+@media(max-width: 1024px) {
+    .card{
+        width: 32%;
+    }
+}
